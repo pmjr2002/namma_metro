@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/trip.css">
+    <title>Plan Your Trip</title>
+    <script>
+        function chatbot(w, d, s, ...args) {
+            var div = d.createElement('div');
+            div.id = 'aichatbot';
+            d.body.appendChild(div);
+            w.chatbotConfig = args;
+            
+            var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s);
+            j.defer = true;
+            j.type = 'module';
+            j.src = 'https://aichatbot.sendbird.com/index.js';
+            f.parentNode.insertBefore(j, f);
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="landing.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="#contact">Plan Your Trip</a>
+        <a href="#login" style="float: right;">Login</a>
+    </div>
+    <div class="header">
+        Plan Your Trip
+    </div>
+    <button onclick="chatbot(window, document, 'script', '5F829772-2F3E-4996-9AF4-CB5518A7F27F', 'onboarding_bot')">Metro Assist</button>
+    
+    
+    <div class="image-container">
+        <div class="one">
+            <div class="onet">
+                <h1>1. Find your nearest station</h1>
+                <h3>The user-friendly Namma Metro map lets you navigate the system. Effortlessly navigate Bangalore's transit system with a quick glance. Find the stations closest to your starting point and final stop, ensuring a smooth and stress-free journey.</h3>
+            </div>
+            <div class="onei">
+                <img src="/static/station.png" alt="Your Image">
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="two">
+            <div class="twot">
+                <h1>2. Reach Destination</h1>
+                <h3>To ensure a smooth ride, all stations are announced and displayed electronically. Additionally, network maps are readily available inside the trains for your convenience.</h3>
+            </div>
+            <div class="twoi">
+                <img src="/static/destination.jpeg" alt="Your Image">
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="one">
+            <div class="onet">
+                <h1>3. Exit Gate</h1>
+                <h3>Once everyone exits, train doors close. Escalators, elevators, or stairs lead to the Concourse level. Tap your smart card on the AFC gate for fare deduction. Drop tokens in designated slots. Signage guides your station exit.</h3>
+                <a class="button-link" href="http://127.0.0.1:5000">Check which exit should you take</a>
+            </div>
+            <div class="threei">
+                <img src="/static/exitgate.jpeg" alt="Your Image">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 BMRCL. All Rights Reserved.</p>
+        <p>For Project Related information: <br><br>
+            Bangalore Metro Rail Corporation Limited, III Floor, BMTC Complex, K.H.Road Shanthinagar, Bengaluru 560027 <br><br>
+             Email: contactus@bmrc.co.in <br><br>
+            
+             91-80- 2296 9300, 2296 9301 <br><br>
+            
+            
+            For Travel Related information: <br><br>
+            Bangalore Metro Rail Corporation Ltd, Byappanahalli Depot, Old Madras Road, NGEF Stop, Bengaluru – 560 038 <br><br>
+             Email: travelhelp@bmrc.co.in <br><br>
+            
+             080 -25191091 <br><br>
+            
+            Toll-free Helpline 1800-425-12345 <br><br>
+            
+            Right to information <br><br>
+            
+            Home <br>
+            Sitemap<br>
+            Copyright Policy<br>
+            Hyperlinking Policy<br>
+            Security Policy<br>
+            Terms & Conditions<br>
+            Privacy Policy<br>
+            Help<br>
+            Screen Reader Access<br>
+            Nammametro App Policy<br><br>
+            For more information on Bangalore Metro Rail Project under the RTI Act, may kindly contact Sri Padmaraju (PIO), BMRCL, Phone No: 080-22969200 / 080-22969400.<br><br>
+            
+            For any Complaints related to Stations / Security Issues / Travel / Recharge / Tokens, passengers may kindly Contact: Toll-free Helpline 1800-425-12345</p>
+    </div>
+    
+</body>
+</html>

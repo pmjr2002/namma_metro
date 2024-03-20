@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/aboutus.css">
+    <title>About Us</title>
+    <script>
+        function chatbot(w, d, s, ...args) {
+            var div = d.createElement('div');
+            div.id = 'aichatbot';
+            d.body.appendChild(div);
+            w.chatbotConfig = args;
+            
+            var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s);
+            j.defer = true;
+            j.type = 'module';
+            j.src = 'https://aichatbot.sendbird.com/index.js';
+            f.parentNode.insertBefore(j, f);
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="landing.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="trip.html">Plan Your Trip</a>
+        <a href="#login" style="float: right;">Login</a>
+    </div>
+    <div class="header">
+        About Us
+    </div>
+    <div class="parag">
+        <p>Bangalore Metro Rail Corporation Limited (BMRCL), a joint venture of Government of India and Government of Karnataka, is a Special Purpose Vehicle entrusted with the responsibility of implementation and operation of Bangalore Metro Rail Project. <br><br>
+
+            Bangalore Metro, christened as "Namma Metro", not only adds to the beauty of Bangalore city skyline, but more importantly provides a safe, quick, reliable and comfortable public transport system. Besides this, Namma Metro is a major environment friendly addition to the Bangalore City as it significantly contributes to the reduction of carbon emissions.<br><br>
+            
+            Metro Services have been in operation on 73.81 KM.<br><br>
+            
+            (a) East-West corridor of 43.49 km commencing at Whitefield (Kadugodi) in the east and terminating at Challaghatta Terminal in the west. <br>
+            
+            (b) North-South corridor of 30.32 km commencing at Nagasandra in the North and terminating at Silk Institute in the South. <br> <br>
+            
+            This is the First Metro rail project in India commissioned with 750V DC Third Rail Traction on Standard Gauge.
+            </p>
+    </div>
+    <button onclick="chatbot(window, document, 'script', '5F829772-2F3E-4996-9AF4-CB5518A7F27F', 'onboarding_bot')">Metro Assist</button>
+    <div class="image-container">
+        <img src="/static/footer.png" alt="About us image">
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 BMRCL. All Rights Reserved.</p>
+        <p>For Project Related information: <br><br>
+            Bangalore Metro Rail Corporation Limited, III Floor, BMTC Complex, K.H.Road Shanthinagar, Bengaluru 560027 <br><br>
+             Email: contactus@bmrc.co.in <br><br>
+            
+             91-80- 2296 9300, 2296 9301 <br><br>
+            
+            
+            For Travel Related information: <br><br>
+            Bangalore Metro Rail Corporation Ltd, Byappanahalli Depot, Old Madras Road, NGEF Stop, Bengaluru – 560 038 <br><br>
+             Email: travelhelp@bmrc.co.in <br><br>
+            
+             080 -25191091 <br><br>
+            
+            Toll-free Helpline 1800-425-12345 <br><br>
+            
+            Right to information <br><br>
+            
+            Home <br>
+            Sitemap<br>
+            Copyright Policy<br>
+            Hyperlinking Policy<br>
+            Security Policy<br>
+            Terms & Conditions<br>
+            Privacy Policy<br>
+            Help<br>
+            Screen Reader Access<br>
+            Nammametro App Policy<br><br>
+            For more information on Bangalore Metro Rail Project under the RTI Act, may kindly contact Sri Padmaraju (PIO), BMRCL, Phone No: 080-22969200 / 080-22969400.<br><br>
+            
+            For any Complaints related to Stations / Security Issues / Travel / Recharge / Tokens, passengers may kindly Contact: Toll-free Helpline 1800-425-12345</p>
+    </div>
+    
+</body>
+</html>
